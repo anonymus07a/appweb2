@@ -1,0 +1,40 @@
+/*Practica Muebles Alejandro Avila Garcia*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 2rem;
+    height: 100vh;
+    background: linear-gradient(to right,
+            rgb(189, 108, 42) 0%,
+            rgb(102, 68, 16) 50%,
+            rgb(133, 121, 46) 100%);
+    cursor: url(./cursor.cur), auto;
+}
+
+section {
+    display: flex;
+    height: 18.75rem; /* 300px */
+}
+
+section img {
+    width: 0rem; /* 0px */
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 3s ease;
+}
+
+section img:hover {
+    width: 18.75rem; /* 300px */
+    opacity: 1;
+    filter: contrast(100%);
+}
